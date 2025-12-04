@@ -12,9 +12,10 @@ p {
   left: 0;
   width: 75%;
   height: 75%;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fi.kym-cdn.com%2Fentries%2Ficons%2Foriginal%2F000%2F035%2F627%2Fcover2.jpg&f=1&nofb=1&ipt=67469a26957df7709c341ae28029cad2c967d5766e48f5e48adecb9166e60654");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center'
+  background-position: center center;
   pointer-events: none;
 }
 
