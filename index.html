@@ -2,11 +2,38 @@
 
 <head>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    #color-text {
+      font-size: 32px;
+      font-weight: bold;
+
+      transition: color 0.5s ease-in-out;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>kjydb</h1>
+  <h1 id="color-text">kjydb</h1>
   <p>Welcome to my website!</p>
+
+  <script>
+    const colors = [
+      "#ff0000",
+      "#00ff00",
+      "#0000ff",
+      "#ffa500",
+      "#800080"
+    ];
+
+    const textEl = document.getElementById("color-text");
+    let index = 0;
+
+    setInterval(() => {
+      textEl.style.color = colors[index];
+      index = (index + 1) % colors.length;
+    }, 500);
+  </script>
+
   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fi.kym-cdn.com%2Fentries%2Ficons%2Foriginal%2F000%2F035%2F627%2Fcover2.jpg&f=1&nofb=1&ipt=67469a26957df7709c341ae28029cad2c967d5766e48f5e48adecb9166e60654" class="full-image"/>
 </body>
 
